@@ -2,9 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
-// import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-ReactDOM.render(<App />,
+// import Home from './pages/home/Home';
+import WatchList from './pages/marketWatch/WatchList';
+
+ReactDOM.render(
+  <App>
+    <Router>
+      <Switch>
+        {/* <Route path='/home' component={Home} exact /> */}
+        <Route path='/watches' component={WatchList} />
+      </Switch>
+    </Router>
+  </App>,
   document.getElementById('root')
 );
 

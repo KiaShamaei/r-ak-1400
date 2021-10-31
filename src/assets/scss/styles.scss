@@ -1,0 +1,26 @@
+@import './font';
+@import './color';
+@import './basic';
+@import './utility';
+@import './dimensions';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+// ------------------------------------------------------- Test:
+.br1 {
+    border: 1px solid red;
+}
+.br2 {
+    border: 2px solid blue;
+}
+.br3 {
+    border: 3px solid goldenrod;
+}
+.bg1 {
+    background-color: aquamarine;
+}
+.bg2 {
+    background-color: bisque;
+}
+.bg3 {
+    background-color: salmon;
+}
