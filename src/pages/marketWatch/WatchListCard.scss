@@ -1,0 +1,13 @@
+@import '../../assets/scss/styles.scss';
+
+.watchListCard-countainer {
+    background-color: #f7f8fa;
+    border: 1px solid #d3d4d6;
+    border-radius: 5px;
+
+    .bullets {
+        min-width: 10px;
+        min-height: 10px;
+        border-radius: 100%;
+    }
+}

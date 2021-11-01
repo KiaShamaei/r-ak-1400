@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'iranSans';
+    src: url('../fonts/IRANSans/ttf/IRANSansWebFaNum_Medium.ttf') format('ttf'),
+        url('../fonts/IRANSans/woff2/IRANSansWebFaNum_Medium.woff2') format('woff2'),
+        url('../fonts/IRANSans/woff/IRANSansWebFaNum_Medium.woff') format('woff'),
+        url('../fonts/IRANSans/eot/IRANSansWebFaNum_Medium.eot') format('eot');
+}
+
+@font-face {
+    font-family: 'iranSansBlack';
+    src: url('../fonts/IRANSans/ttf/IRANSansWebFaNum_Black.ttf') format('ttf'),
+        url('../fonts/IRANSans/woff2/IRANSansWebFaNum_Black.woff2') format('woff2'),
+        url('../fonts/IRANSans/woff/IRANSansWebFaNum_Black.woff') format('woff'),
+        url('../fonts/IRANSans/eot/IRANSansWebFaNum_Black.eot') format('eot');
+}
+
+@font-face {
+    font-family: 'iranSansBold';
+    src: url('../fonts/IRANSans/ttf/IRANSansWebFaNum_Bold.ttf') format('ttf'),
+        url('../fonts/IRANSans/woff2/IRANSansWebFaNum_Bold.woff2') format('woff2'),
+        url('../fonts/IRANSans/woff/IRANSansWebFaNum_Bold.woff') format('woff'),
+        url('../fonts/IRANSans/eot/IRANSansWebFaNum_Bold.eot') format('eot');
+}
+
+@font-face {
+    font-family: 'iranSansLight';
+    src: url('../fonts/IRANSans/ttf/IRANSansWebFaNum_Light.ttf') format('ttf'),
+        url('../fonts/IRANSans/woff2/IRANSansWebFaNum_Light.woff2') format('woff2'),
+        url('../fonts/IRANSans/woff/IRANSansWebFaNum_Light.woff') format('woff'),
+        url('../fonts/IRANSans/eot/IRANSansWebFaNum_Light.eot') format('eot');
+}
+
+@font-face {
+    font-family: 'iranSansUltraLight';
+    src: url('../fonts/IRANSans/ttf/IRANSansWebFaNum_UltraLight.ttf') format('ttf'),
+        url('../fonts/IRANSans/woff2/IRANSansWebFaNum_UltraLight.woff2') format('woff2'),
+        url('../fonts/IRANSans/woff/IRANSansWebFaNum_UltraLight.woff') format('woff'),
+        url('../fonts/IRANSans/eot/IRANSansWebFaNum_UltraLight.eot') format('eot');
+}
+
+@font-face {
+    font-family: 'iranSansNum';
+    src: url('../fonts/IRANSans/ttf/IRANSansWebFaNum.ttf');
+    font-style: normal;
+    font-weight: normal;
+}

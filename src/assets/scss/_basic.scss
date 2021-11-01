@@ -1,0 +1,23 @@
+@import './dimensions';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: $dim-font-base;
+    direction: rtl;
+    text-align: right;
+    font-family: iranSans;
+    list-style: none;
+    box-sizing: border-box;
+}
+p {
+    margin: 0;
+}
+
+html,
+body,
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
