@@ -1,4 +1,6 @@
-
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchWatchs } from '../../store/actions/watchActions/actions';
 import MemoizedWatchListCard from './WatchListCard';
 
 // #WATCHLIST
@@ -6,6 +8,13 @@ import './WatchList.scss';
 
 
 const WatchList = () => {
+  const state = useSelector(state => state.watchs);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchWatchs())
+  }, [dispatch])
+  console.log(state)
+
   const watchList = [
     {
       active: true,
