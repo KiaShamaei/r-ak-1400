@@ -38,7 +38,7 @@ const WatchList = () => {
     },
   ];
   return (
-    <div className='h-100 watchList-container br3'>
+    <div className='h-100 watchList-container'>
       <Tabs defaultActiveKey='a' id='uncontrolled-tab-example'>
         <Tab eventKey='a' title='محصولات شیمیایی'>
           {watchList.map((el, index) => {

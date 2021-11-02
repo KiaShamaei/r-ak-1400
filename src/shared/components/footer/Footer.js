@@ -28,10 +28,10 @@ export const Footer = (props) => {
   ];
 
   return (
-    <div className='p-2 d-flex justify-content-between align-items-center footer-menu'>
+    <div className='p-2 d-flex justify-content-between align-items-center footer'>
       {menu.map((el, index) => {
         return (
-          <div className='d-flex flex-column justify-content-center  align-items-center menu-item'>
+          <div className='d-flex flex-column justify-content-center  align-items-center menu'>
             <img src={placeholder} />
             <p>{el.name}</p>
           </div>

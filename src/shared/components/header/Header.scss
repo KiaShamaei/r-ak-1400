@@ -1,0 +1,13 @@
+@import '../../../assets/scss/styles.scss';
+
+.header {
+    border-bottom: 1px solid #f0f1f4;
+
+    .info {
+        p {
+            padding: 0px 3px;
+            direction: ltr;
+            text-align: left;
+        }
+    }
+}
