@@ -1,0 +1,14 @@
+// ------------------------------------------------------- Tabs (react-bootstrap)
+.nav-tabs .nav-link {
+    border: none;
+}
+.nav-tabs .nav-link {
+    background-color: unset;
+    border: none;
+}
+
+.nav-tabs .nav-link.active {
+    font-family: iranSansBold;
+    color: #4181ff;
+    border-bottom: 2px solid #4181ff;
+}
