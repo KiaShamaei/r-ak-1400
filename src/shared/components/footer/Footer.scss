@@ -1,0 +1,16 @@
+@import '../../../assets/scss/styles.scss';
+
+.footer-menu {
+    background-color: #f0f1f4;
+    .menu-item {
+        cursor: pointer;
+        img {
+            max-width: 18px;
+        }
+        p {
+            font-family: iranSansBold;
+            font-size: $dim-font-base - 2px;
+            padding-top: 1px;
+        }
+    }
+}
