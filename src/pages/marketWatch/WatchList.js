@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchWatchs } from '../../store/actions/watchActions/actions';
+import { fetchWatches } from '../../store/actions/watchActions/actions';
 import MemoizedWatchListCard from './WatchListCard';
 
 // #WATCHLIST
 import './WatchList.scss';
 
 const WatchList = () => {
-  const state = useSelector((state) => state.watchs);
+  const state = useSelector((state) => state.watches);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchWatchs());
+    dispatch(fetchWatches());
   }, [dispatch]);
   console.log(state);
 

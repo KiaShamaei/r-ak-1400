@@ -1,13 +1,9 @@
-import {combineReducers} from 'redux'
+import { combineReducers } from 'redux';
 import { watchReducer } from './reducers/watchReducer';
 
-
-
-
 const rootReducer = combineReducers({
-
-    //reducer must be add here ... 
-    watchs :watchReducer
-})
+  //reducer must be add here ...
+  watches: watchReducer,
+});
 
 export default rootReducer;
