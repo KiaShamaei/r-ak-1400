@@ -2,8 +2,9 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchWatches } from '../../store/actions/watchActions/actions';
 import MemoizedWatchListCard from './WatchListCard';
+import Tabs from 'react-bootstrap/Tabs';
+import Tab from 'react-bootstrap/Tab';
 
-// #WATCHLIST
 import './WatchList.scss';
 
 const WatchList = () => {
@@ -37,14 +38,20 @@ const WatchList = () => {
     },
   ];
   return (
-    <div className='h-100 watchList-container'>
-      {watchList.map((el, index) => {
-        return (
-          <div className='m-3' key={index}>
-            <MemoizedWatchListCard data={el} />
-          </div>
-        );
-      })}
+    <div className='h-100 watchList-container br3'>
+      <Tabs defaultActiveKey='a' id='uncontrolled-tab-example'>
+        <Tab eventKey='a' title='محصولات شیمیایی'>
+          {watchList.map((el, index) => {
+            return (
+              <div className='m-3' key={index}>
+                <MemoizedWatchListCard data={el} />
+              </div>
+            );
+          })}
+        </Tab>
+        <Tab eventKey='b' title='خودرویی'></Tab>
+        <Tab eventKey='c' title='فولاد' disabled></Tab>
+      </Tabs>
     </div>
   );
 };
