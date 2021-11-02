@@ -1,9 +1,11 @@
 import React from 'react'
 
-export const wrapper = (props) => {
+export const Wrapper = (props) => {
     return (
-        <div>
-            {props.children}
+        <div className='d-flex justify-content-center align-items-center main-container '>
+            <div className='app-container br3'>
+                {props.children}
+            </div>
         </div>
     )
 }
