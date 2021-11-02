@@ -6,14 +6,13 @@ import MemoizedWatchListCard from './WatchListCard';
 // #WATCHLIST
 import './WatchList.scss';
 
-
 const WatchList = () => {
-  const state = useSelector(state => state.watchs);
+  const state = useSelector((state) => state.watchs);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchWatchs())
-  }, [dispatch])
-  console.log(state)
+    dispatch(fetchWatchs());
+  }, [dispatch]);
+  console.log(state);
 
   const watchList = [
     {
@@ -39,14 +38,14 @@ const WatchList = () => {
   ];
   return (
     <div className='h-100 watchList-container'>
-    {watchList.map((el , index) => {
-      return (
-        <div className='m-3' key={index}>
-          <MemoizedWatchListCard data={el}  />
-        </div>
-      );
-    })}
-  </div>
+      {watchList.map((el, index) => {
+        return (
+          <div className='m-3' key={index}>
+            <MemoizedWatchListCard data={el} />
+          </div>
+        );
+      })}
+    </div>
   );
 };
 export default WatchList;
