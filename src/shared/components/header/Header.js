@@ -11,7 +11,7 @@ export const Header = (props) => {
     <div className='p-2 d-flex justify-content-between align-items-center header'>
       <img src={logo} />
 
-      <div className='mr-auto pl-4 info'>
+      <div className='mr-auto pl-3 info'>
         <div className='d-flex justify-content-end '>
           <p>13:37:36</p>
           <img src={openIcon} />
