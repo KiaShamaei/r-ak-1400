@@ -50,7 +50,7 @@ const WatchList = () => {
           })}
         </Tab>
         <Tab eventKey='b' title='خودرویی'></Tab>
-        <Tab eventKey='c' title='فولاد' disabled></Tab>
+        <Tab eventKey='c' title='فولاد'></Tab>
       </Tabs>
     </div>
   );

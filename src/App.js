@@ -11,6 +11,7 @@ import rootReducer from './store';
 import { Provider } from 'react-redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
+import Layout from './shared/components/layout/Layout';
 
 const store = createStore(
   rootReducer,
@@ -28,7 +29,8 @@ const App = (props) => {
           <Router>
             <Switch>
               {/*routs & autRouts comes here */}
-              <Route path='/' component={WatchList} />
+              {/* <Route path='/' component={WatchList} /> */}
+              <Route path='/' component={Layout} />
             </Switch>
           </Router>
         </Wrapper>
