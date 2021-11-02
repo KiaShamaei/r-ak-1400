@@ -7,10 +7,12 @@ import './Layout.scss';
 
 const Layout = (props) => {
   return (
-    <div className='h-100'>
+    <div className='h-100 d-flex flex-column'>
       <Header />
       <WatchList />
-      <Footer />
+      <div className='mt-auto'>
+        <Footer />
+      </div>
     </div>
   );
 };
