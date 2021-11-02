@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './WatchListCard.scss';
+import placeholder from '../../assets/images/icon/chart-placeholder.svg';
 
 export default function WatchListCard({ data }) {
   return (
@@ -8,12 +9,17 @@ export default function WatchListCard({ data }) {
       <div className='d-flex justify-content-between align-items-center'>
         <div className='d-flex justify-content-between align-items-center'>
           <p className='bullets bg-green'></p>
-          <p className='pr-2'>{data.name}</p>
+          <p className='pr-2 font-family-bold'>{data.name}</p>
         </div>
-        <p>{data.name}</p>
+
+        <img src={placeholder} />
+
         <div className='d-flex flex-column  justify-content-between align-items-center'>
-          <p className=''>{data.balance}</p>
-          <p className=''>{data.balancePercent}</p>
+          <p className='font-family-bold'>{data.balance}</p>
+
+          <p className={data.balancePercent < 0 ? 'color-red' : 'color-green'}>
+            {data.balancePercent}
+          </p>
         </div>
       </div>
 
@@ -24,9 +30,9 @@ export default function WatchListCard({ data }) {
       </div>
 
       <div className='d-flex justify-content-between align-items-center'>
-        <p>
-          <span className='pl-2'>({data.endPricePercent})</span>
+        <p className={data.endPricePercent < 0 ? 'color-red' : 'color-green'}>
           <span>{data.endPrice}</span>
+          <span className='ml-2'>({data.endPricePercent})</span>
         </p>
         <p>{data.count}</p>
         <p>{data.value}</p>

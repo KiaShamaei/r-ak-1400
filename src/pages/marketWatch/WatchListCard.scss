@@ -5,9 +5,15 @@
     border: 1px solid #d3d4d6;
     border-radius: 5px;
 
+    p,
+    span {
+        font-family: iranSansLight;
+        direction: ltr;
+    }
+
     .bullets {
-        min-width: 10px;
-        min-height: 10px;
+        min-width: 5px;
+        min-height: 5px;
         border-radius: 100%;
     }
 }
